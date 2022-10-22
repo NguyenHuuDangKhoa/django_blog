@@ -12,7 +12,7 @@ posts = [
         'author': 'Dang',
         'title': 'Blog Post 2',
         'content': 'Second post content',
-        'date_posted': '2022'
+        'date_posted': '2023'
     },
 ]
 
@@ -24,4 +24,4 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title': 'About'})
